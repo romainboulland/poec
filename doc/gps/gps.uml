@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_D50OwN9IEeeYUMtFpZC_XA" name="gps">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_e6QrYN9KEeeYUMtFpZC_XA">
+    <body>Déclarer l'appareil&#xD;
+Nom&#xD;
+{portée,2D}</body>
+  </ownedComment>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_L2EToN9IEeeYUMtFpZC_XA" name="cible">
+    <generalization xmi:type="uml:Generalization" xmi:id="_eNU-wOAMEeewStafg2NOaA" general="_iFl7sOAKEeewStafg2NOaA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_iFl7sOAKEeewStafg2NOaA" name="Envoi GPS"/>
+</uml:Model>
