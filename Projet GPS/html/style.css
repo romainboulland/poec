@@ -1,0 +1,18 @@
+*{
+	margin : 0;
+	padding: 0;
+	border: none;
+	border-radius: 0px;
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	background-color: #92b558;
+	position: fixed;
+
+}
+
+#logo {
+	float:left;
+}
