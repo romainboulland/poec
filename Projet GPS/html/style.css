@@ -6,13 +6,158 @@
 	box-sizing: border-box;
 }
 
-header {
-	width: 100%;
-	background-color: #92b558;
-	position: fixed;
-
+:root {
+	--main-bg-color : #92b558;
+	--second-bg-color : #386fa4;
+	--third-bg-color : #3da5d9;
 }
 
 #logo {
-	float:left;
+	margin : auto;
+	width: 100%;
 }
+
+#admin-header {
+	height: 3em;
+	line-height: 3em;
+	font-size: 1.2em;
+	z-index: 0;
+	text-align: right;
+	padding: 10px;
+	width: 100%;
+	background-color: var(--main-bg-color);
+}
+
+.menu-header {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	height : 50px;
+	background: var(--second-bg-color);
+	width : 100%;
+	color : white;
+	font-size: 1.2em;
+	font-family: 'Nunito', sans-serif;
+	height: 3em; /* hauteur du parent */
+	line-height: 3em; /* hauteur de ligne (identique) */
+	white-space: nowrap;
+	text-align: center;
+}
+
+
+#menu {
+	min-width: 80px;
+	margin-right: 10px;
+	height: 100%;
+	background-color: var(--second-bg-color);
+	z-index: 2;
+	box-shadow: 2px 1px 3px grey;
+}
+
+.menu-element {
+	white-space:nowrap;
+	margin-right: 0px;
+	font-size: 1.1em;
+	font-family: 'Nunito', sans-serif;
+	color : white;
+	display: block;
+	padding: 15px;
+	vertical-align: middle;
+	text-align: left;
+	background-color : var(--third-bg-color);
+	/*box-shadow: inset 0 0 5px #3da5d9, 0 0 5px #386fa4;*/
+	transition: background-color 1s ease;
+}
+
+
+.menu-element:hover {
+	cursor: pointer;
+	background-color: var(--second-bg-color);
+}
+
+
+.menu-element a {
+	text-decoration: none;
+	color : white;
+	transition: text-shadow 1s ease-out;
+}
+
+.menu-element a:hover {
+	 text-shadow: 2px 2px 2px var(--third-bg-color);
+}
+
+
+.selected-menu {
+	background-color: orange;
+}
+
+.icon-menu:before {
+	font-family : fontawesome;
+	content: '\f0c9';
+	padding: 10px;
+}
+
+
+
+.icon-tools:before {
+	color : white;
+	font-family : fontawesome;
+	content : '\f0ad';
+	padding: 10px;
+}
+
+.icon-cogs:before {
+	color :white;
+	font-family : fontawesome;
+	content : '\f013';
+	padding: 10px;
+}
+
+.icon-map:before {
+	color :white;
+	font-family : fontawesome;
+	content : '\f279';
+	padding: 10px;
+}
+
+.icon-location:before {
+	color :white;
+	font-family : fontawesome;
+	content : '\f124';
+	padding: 10px;
+}
+
+.icon-alert:before {
+	color :white;
+	font-family : fontawesome;
+	content : '\f0f3';
+	padding: 10px;
+}
+ 
+
+#section1 {
+	display: none;
+}
+#section2 {
+	display: none;
+}
+#section3 {
+	display: none;
+}
+#section4 {
+	display: none;
+}
+#section5 {
+	display: none;
+}
+
+main {
+	padding : 20px;
+	padding-top: 10px;
+	text-align: justify;
+}
+
+#conteneur {
+	display: flex;
+}
+
